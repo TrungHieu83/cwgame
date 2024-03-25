@@ -1,0 +1,184 @@
+.label-input {
+  transition: 0.3s ease-out;
+}
+
+/* .label-input {
+  transform-origin: top left;
+  transition: transform 0.3s ease-out;
+}
+
+.input:focus + .label-input,
+.input:not(:placeholder-shown) + .label-input {
+  transform: translateY(-1.5em) scale(0.8);
+}
+
+.label-input {
+  opacity: 0.6;
+  transition: opacity 0.3s ease-out;
+} */
+
+.input:focus + .label-input,
+.input:not(:placeholder-shown) + .label-input {
+  opacity: 1;
+}
+
+.input:focus + .label-input,
+.input.has-val + .label-input,
+.input.focus + .label-input,
+.input.autofill-animation-start + .label-input {
+  bottom: 28px;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #f2f2f2;
+}
+
+.form-auth {
+  width: 397px;
+  max-width: 100%;
+  min-height: 385px;
+  background: #fff;
+  border-radius: 21px;
+  overflow: hidden;
+  padding: 35px 56px 58px;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  -ms-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.form-title {
+  color: #464646;
+  font-family: "Eurostile";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.form-group {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 30px;
+}
+
+.input {
+  font-family: Poppins-Regular;
+  font-size: 16px;
+  color: #676767;
+
+  display: block;
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  padding: 0 25px 0 5px;
+}
+
+.label-input {
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 7px;
+  left: 5px;
+  pointer-events: none;
+  color: #626262;
+  font-family: Eurostile;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.input:focus + .label-input,
+.input.has-val + .label-input {
+  bottom: 28px;
+}
+
+.btn-show-pass,
+.btn-hide-pass {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.btn-show-pass.active,
+.btn-hide-pass.active {
+  display: block;
+}
+
+.btn-show-pass img {
+  height: 14px;
+  width: 18px;
+  aspect-ratio: 18 / 14;
+}
+
+.form-btn {
+  text-align: center;
+  font-family: "Eurostile";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 8px;
+}
+
+.form-btn.btn-submit {
+  background: #d30000;
+  margin-bottom: 44px;
+  color: #fff;
+}
+
+.form-btn.btn-register,
+.form-btn.btn-login {
+  border: 1px solid #464646;
+  background: inherit;
+  color: #464646;
+}
+
+.form-bottom span {
+  color: #676767;
+  font-family: "Eurostile";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 5px;
+}
+
+@media screen and (max-width: 425.98px) {
+  .form-auth {
+    width: 100%;
+    padding: 35px 30px 58px;
+  }
+}
+
+@media screen and (max-width: 375.98px) {
+  .form-auth {
+    width: 100%;
+    padding: 30px 25px 48px;
+  }
+}
